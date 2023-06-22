@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid challenge 1</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+            grid-gap:20px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns:minmax(50px,auto) ;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        .items{
+            background-color:lightblue;
+            border: px green solid;
+            border-radius: 3px;
+            text-align: center
+        }
+        #item-1{
+              grid-column-start: ;
+              grid-column-end: 
+        }
+        #item-2{
+            grid-row-start: ;
+            grid-row-end: ;
+           
+        }
+        .item-1-container{
+            display: grid;
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-row-start: 1;
+            grid-row-end: 10;
+        }
+        .nested-item{
+            /* border: 2px solid yellow;
+            border-radius: 3px;
+            background-color:aqua; */
+        }
+        .item-2-container{
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            grid-row-start: 1;
+            grid-row-end: 10;
+            grid-gap:20px
+        }
+        .nested-item-2{
+            border: 2px solid white;
+            
+        }
+        #item-3{
+            grid-row-start: 1;
+            grid-row-end: 10;
+        }
+        #item-4{
+            grid-row-start: 1;
+            grid-row-end: 10;
+        }
+        #item-5{
+            grid-row-start: 1;
+            grid-row-end: 10;
+        }
+        #item-6{
+            grid-row-start: 1;
+            grid-row-end: 10;
+        }
+        #nested-1{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: aqua;
+        }
+        #nested-2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: aqua;
+        }
+       .item-3-container{
+                display: grid;
+                grid-template-rows: repeat(3,1fr);
+                grid-gap:20px
+        }
+        .nested-item{
+            border: 2px white;
+        }
+        #nested-3{
+            background-color: aqua;
+        } 
+        #nested-4{
+            background-color: aqua;
+        }
+        #nested-5{
+            background-color: aqua;
+        }
+        .item-4-container{
+            display: grid;
+                grid-template-rows: repeat(4,1fr);
+                grid-gap:20px
+        }
+        .item-5-container{
+            display: grid;
+                grid-template-rows: repeat(6,1fr);
+                grid-gap:20px
+        }
+        .item-6-container{
+            display: grid;
+                grid-template-rows: repeat(12,1fr);
+                grid-gap:20px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1-container" id="nested-3">1</div>
+        <div class="items item-2-container" id="item-2">
+            <div class="nested-item-2" id="nested-3">2</div>
+            <div class="nested-item-2" id="nested-3">3</div>
+        </div>
+        <div class="items item-3-container" id="item-3">
+            <div class="nested-item" id="nested-3">4</div>
+            <div class="nested-item" id="nested-3">5</div>
+            <div class="nested-item" id="nested-3">6</div>
+        </div>
+        <div class="items item-4-container" id="item-4">
+            <div class="nested-item-3" id="nested-3">6</div>
+            <div class="nested-item-3" id="nested-3">7</div>
+            <div class="nested-item-3" id="nested-3">8</div>
+            <div class="nested-item-3" id="nested-3">9</div>
+        </div>
+        <div class="items item-5-container" id="item-5">
+            <div class="nested-item-4" id="nested-3">10</div>
+            <div class="nested-item-4"id="nested-3">11</div>
+            <div class="nested-item-4"id="nested-3">12</div>
+            <div class="nested-item-4"id="nested-3">13</div>
+            <div class="nested-item-4"id="nested-3">14</div>
+            <div class="nested-item-4"id="nested-3">15</div>
+        </div>
+        <div class="items item-6-container" id="item-6">
+            <div class="nested-item-6"id="nested-3">16</div>
+            <div class="nested-item-6"id="nested-3">17</div>
+            <div class="nested-item-6"id="nested-3">18</div>
+            <div class="nested-item-6"id="nested-3">19</div>
+            <div class="nested-item-6"id="nested-3">20</div>
+            <div class="nested-item-6"id="nested-3">21</div>
+            <div class="nested-item-6"id="nested-3">22</div><div class="container">
+                <div class="items item-1-container" id="nested-3">1</div>
+                <div class="items item-2-container" id="item-2">
+                    <div class="nested-item-2" id="nested-3">2</div>
+                    <div class="nested-item-2" id="nested-3">3</div>
+                </div>
+                <div class="items item-3-container" id="item-3">
+                    <div class="nested-item" id="nested-3">4</div>
+                    <div class="nested-item" id="nested-3">5</div>
+                    <div class="nested-item" id="nested-3">6</div>
+                </div>
+                <div class="items item-4-container" id="item-4">
+                    <div class="nested-item-3" id="nested-3">6</div>
+                    <div class="nested-item-3" id="nested-3">7</div>
+                    <div class="nested-item-3" id="nested-3">8</div>
+                    <div class="nested-item-3" id="nested-3">9</div>
+                </div>
+                <div class="items item-5-container" id="item-5">
+                    <div class="nested-item-4" id="nested-3">10</div>
+                    <div class="nested-item-4"id="nested-3">11</div>
+                    <div class="nested-item-4"id="nested-3">12</div>
+                    <div class="nested-item-4"id="nested-3">13</div>
+                    <div class="nested-item-4"id="nested-3">14</div>
+                    <div class="nested-item-4"id="nested-3">15</div>
+                </div>
+                <div class="items item-6-container" id="item-6">
+                    <div class="nested-item-6"id="nested-3">16</div>
+                    <div class="nested-item-6"id="nested-3">17</div>
+                    <div class="nested-item-6"id="nested-3">18</div>
+                    <div class="nested-item-6"id="nested-3">19</div>
+                    <div class="nested-item-6"id="nested-3">20</div>
+                    <div class="nested-item-6"id="nested-3">21</div>
+                    <div class="nested-item-6"id="nested-3">22</div>
+                    <div class="nested-item-6"id="nested-3">23</div>
+                    <div class="nested-item-6"id="nested-3">24</div>
+                    <div class="nested-item-6"id="nested-3">25</div>
+                    <div class="nested-item-6"id="nested-3">26</div>
+                    <div class="nested-item-6"id="nested-3">27</div>
+                </div>
+            </div>
+        </body>
+        </html>
+            <div class="nested-item-6"id="nested-3">23</div>
+            <div class="nested-item-6"id="nested-3">24</div>
+            <div class="nested-item-6"id="nested-3">25</div>
+            <div class="nested-item-6"id="nested-3">26</div>
+            <div class="nested-item-6"id="nested-3">27</div>
+        </div>
+    </div>
+</body>
+</html>

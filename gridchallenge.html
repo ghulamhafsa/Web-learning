@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid DChallenge</title>
+    <style>
+        .cnt{
+    display: grid;
+    grid-template-columns: 1fr 4fr 0.75fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    height: 750px;
+    grid-gap: 10px;
+}
+.item{
+    background-color: rgb(223, 250, 70);
+    border-radius: 3px;
+    border:1px solid black;
+
+}
+#item-1{
+    grid-row-start:1 ;
+    grid-row-end:4
+}
+#item-2{
+    grid-column-start:2;
+    grid-column-end:4 ;
+    grid-row-start:1;
+    grid-row-end:2 ;
+}
+#item-3{
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3 ;
+}
+#item-4{
+    grid-row-start:2;
+    grid-row-end:3 ;
+}
+#item-5{
+    grid-column-start:2 ;
+    grid-column-end:4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+    </style>
+</head>
+<body>
+    <div class="cnt">
+        <div class="item" id="item-1">Nav</div>
+        <div class="item" id="item-2">Header</div>
+        <div class="item" id="item-3">Article</div>
+        <div class="item" id="item-4">Ads</div>
+        <div class="item" id="item-5">Footer</div>
+    </div>
+</body>
+</html>
